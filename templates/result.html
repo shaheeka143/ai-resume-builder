@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ATS Result</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<div class="page">
+    <div class="card result-card">
+
+        <h1>ATS Result</h1>
+        <p class="role">Target Role: <strong>{{ role }}</strong></p>
+
+        <div class="score-box">
+            <span class="score-label">ATS Score</span>
+            <span class="score-value">{{ score }}/100</span>
+        </div>
+
+        <div class="feedback">
+            <h3>Suggestions to Improve</h3>
+            <ul>
+                {% for f in feedback %}
+                <li>{{ f }}</li>
+                {% endfor %}
+            </ul>
+        </div>
+
+        <div class="actions">
+            <a href="/{{ pdf_path }}" class="primary-btn" download>
+                Download PDF Resume
+            </a>
+
+            <a href="/{{ docx_path }}" class="secondary-btn" download>
+                Download DOCX Resume
+            </a>
+        </div>
+
+        <a href="/" class="back-link">← Edit Resume</a>
+
+    </div>
+</div>
+
+</body>
+</html>

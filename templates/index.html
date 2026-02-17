@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Resume Builder</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+
+<div class="page">
+    <div class="card">
+        <h1>AI Resume Builder</h1>
+        <p class="subtitle">
+            Generate ATS-optimized resumes tailored to your target role.
+        </p>
+
+        <form method="POST">
+
+            <div class="section">
+                <h3>Personal Information</h3>
+                <input name="name" placeholder="Full Name" required>
+                <input name="email" placeholder="Email Address" required>
+                <input name="phone" placeholder="Phone Number" required>
+                <input name="linkedin" placeholder="LinkedIn Profile URL">
+
+            </div>
+
+            <div class="section">
+                <h3>Professional Summary</h3>
+                <textarea name="summary" placeholder="2–3 lines about your profile"></textarea>
+            </div>
+
+            <div class="section">
+                <h3>Skills</h3>
+                <textarea name="skills" placeholder="Python, Machine Learning, SQL, OpenCV"></textarea>
+            </div>
+
+            <div class="section">
+                <h3>Education</h3>
+                <textarea name="education"placeholder="Enter each education on a new lineExample:M.Tech in AI & DS, XYZ University, 2024–2026
+                B.Tech in CSE, ABC College, 2020–2024"></textarea>
+            </div>
+
+            <div class="section">
+                <h3>Projects</h3>
+                <textarea name="projects"></textarea>
+
+            </div>
+
+            <div class="section">
+                <h3>Certifications</h3>
+                <textarea name="certifications" placeholder="Certification 1, Certification 2"></textarea>
+            </div>
+
+            <div class="section">
+                <h3>Target Role</h3>
+                <input name="role" placeholder="AI Engineer, Data Scientist, Backend Developer" required>
+            </div>
+            <div class="section">
+            <h3>Declaration</h3>
+            <textarea name="declaration" placeholder="I hereby declare that the above information is true to the best of my knowledge."></textarea>
+            </div>
+            <div class="section">
+            <h3>Resume Template</h3>
+            <select name="template">
+            <option value="professional">Professional</option>
+            <option value="minimal">Minimal</option>
+            <option value="technical">Technical</option>
+            </select>
+
+            </div>
+
+            <button type="submit" class="primary-btn">
+            Generate ATS Resume
+            </button>
+
+        </form>
+    </div>
+</div>
+
+</body>
+</html>

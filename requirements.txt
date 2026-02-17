@@ -1,0 +1,7 @@
+flask
+spacy
+sentence-transformers
+scikit-learn
+python-docx
+reportlab
+numpy
