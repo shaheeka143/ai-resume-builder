@@ -1,4 +1,5 @@
 flask
+gunicorn
 spacy
 sentence-transformers
 scikit-learn
