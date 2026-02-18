@@ -1,8 +1,7 @@
 flask
 gunicorn
-spacy
-sentence-transformers
+spacy==3.7.2
+sentence-transformers==2.6.1
 scikit-learn
 python-docx
 reportlab
-numpy
