@@ -2,5 +2,5 @@ services:
   - type: web
     name: ai-resume-builder
     env: python
-    buildCommand: "pip install -r requirements.txt && python -m spacy download en_core_web_sm"
+    buildCommand: "pip install --only-binary :all: -r requirements.txt && python -m spacy download en_core_web_sm"
     startCommand: "gunicorn app:app"
